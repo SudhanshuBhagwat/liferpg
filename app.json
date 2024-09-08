@@ -13,14 +13,18 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.bhagwat.liferpg"
+      "bundleIdentifier": "com.bhagwat.liferpg",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.bhagwat.liferpg"
+      "package": "com.bhagwat.liferpg",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -29,6 +33,9 @@
       "eas": {
         "projectId": "19d73e82-3b79-4256-b581-9191ff109e3d"
       }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/19d73e82-3b79-4256-b581-9191ff109e3d"
     }
   }
 }

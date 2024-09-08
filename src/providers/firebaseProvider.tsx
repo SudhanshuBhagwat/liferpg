@@ -2,7 +2,10 @@ import { createContext, useEffect, useState } from "react";
 import { onAuthStateChanged, User } from "firebase/auth";
 import { auth } from "firebaseconfig";
 
-export const UserContext = createContext({});
+export const UserContext = createContext({
+  user: null,
+  validatingUser: false,
+});
 
 const UserProvider = (props) => {
   const [user, setUser] = useState<User | null>(null);
